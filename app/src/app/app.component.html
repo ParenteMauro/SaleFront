@@ -1,0 +1,12 @@
+
+<mat-drawer-container>
+  <mat-drawer #drawer mode="side">
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/customer']">Customer</a>
+  </mat-drawer>
+  <div>
+    <button (click) = "drawer.toggle();">Show/Hide</button>
+    <router-outlet></router-outlet>
+
+  </div>
+</mat-drawer-container>
