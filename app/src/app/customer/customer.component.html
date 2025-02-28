@@ -2,7 +2,9 @@
     {{customer.name}}
     {{customer.id}}
 </div> -->
-
+<div>
+    <button mat-raised-button color="primary" (click)="openAdd()"> New customer</button>
+</div>
 <div>
     <table mat-table [dataSource]="listCustomers" class="mat-elevation-z4">
         <ng-container matColumnDef="id">
